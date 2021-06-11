@@ -11,16 +11,25 @@ After running the application the user will interact with your virtual file syst
 System Commands:
 
 CreateFile root/file.txt 100	
+
 This command used to create file named “file.txt” with 100 KB size under the path “root”
+
 Pre-requests:
 1-	The path is already exist
+
 2-	No file with the same name is already created under this path
+
 3-	Enough space exists
 
-CreateFolder root/folder1	This command is used to create a new folder named “folder1” under the path “root”
+CreateFolder root/folder1	
+
+This command is used to create a new folder named “folder1” under the path “root”
+
 Pre-requests:
 1-	The path is already exist
+
 2-	No folder with the same name is already created under this path. 
+
 DeleteFile root/folder1/file.txt  	This command used to delete file named “file.txt” form the path "root/folder1". Any blocks allocated by this file should be de-allocated.
 Pre-requests:
 1-	The file is already exist under the path specified 
