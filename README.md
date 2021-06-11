@@ -1,17 +1,22 @@
 # File-System-Simulator-
 Assume that you have a virtual file system with a root directory called "root" all the files and folders will be stored under it.  The disk size consists of N blocks and each block size is 1 KB.
+
 The aim of this assignment is to simulate the allocation and de-allocation of files and folders using different allocation techniques. Implement the two allocation techniques listed below (Refer to the file system chapter in your text book):
+
 1-	Contiguous Allocation (Using Worst Fit allocation) 
 2-	Indexed Allocation
 3-	Linked Allocation
+
 After running the application the user will interact with your virtual file system through a series of commands, these commands are illustrated in the table below:
 System Commands:
-Command	Summary
-CreateFile root/file.txt 100	This command used to create file named “file.txt” with 100 KB size under the path “root”
+
+CreateFile root/file.txt 100	
+This command used to create file named “file.txt” with 100 KB size under the path “root”
 Pre-requests:
 1-	The path is already exist
 2-	No file with the same name is already created under this path
 3-	Enough space exists
+
 CreateFolder root/folder1	This command is used to create a new folder named “folder1” under the path “root”
 Pre-requests:
 1-	The path is already exist
@@ -78,9 +83,7 @@ public class Directory {
 then makes recursion to loop on the subDirectories to print their structure too.
 
 The level parameter can be used to print spaces before the directory name is printed to show its level in the structure */
-		. . .
-}
-}
+
 2- Empty Blocks (Free Space Manager)
 You should implement a free space manager component which will be used by the allocation technique to know which blocks are free, to search for free contiguous blocks, to de-allocate blocks when a file is deleted and to allocate blocks when a file is created and so on.
 As mentioned before in the previous section, your virtual file system file will contain the empty blocks, this can be done using a series of zeros of ones, where a zero at index 2 in the series means that block 2 is free, and a one at index 2 means that block 2 is allocated.  
