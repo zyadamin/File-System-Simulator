@@ -16,7 +16,6 @@ This command used to create file named “file.txt” with 100 KB size under the
 
 Pre-requests:
 1-	The path is already exist
-
 2-	No file with the same name is already created under this path
 
 3-	Enough space exists
